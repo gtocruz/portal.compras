@@ -19,9 +19,7 @@ public class Functions {
 
 	public WebDriverWait wait;
 	public WebDriver driver;
-	public String url = "https://www.magazineluiza.com.br"; // e-commerce homepage
-	public String campobusca = "//input[@id='inpHeaderSearch']";
-	public String searchbtn = "//*[@id='btnHeaderSearch']";
+
 	
 	// ===========================================================================================
 	
@@ -43,7 +41,7 @@ public class Functions {
 		//Move image file to new destination
 				
 		if(filepath == null) {
-		filepath=("C:/Users/gocruz/eclipse-workspace/AcessaPortal/Screenshots/"+dateFormat.format(date)+".png");
+		filepath=("C:/Users/gocruz/eclipse-workspace/portal.compras/Screenshots/"+dateFormat.format(date)+".png");
 		}
 		
 		File DestFile=new File(filepath);

@@ -88,6 +88,8 @@ public class StepDefinition extends Functions {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		//Saves all results that match our book ID
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(resultsPage)));
 		List<WebElement> results = driver.findElements(By.xpath(resultsPage));
 
 		//Verifies that my book id is really among the results
